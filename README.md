@@ -1,1 +1,1 @@
-DILo Workshop 28.04.16 @ DILo Denpasar
+DILo Workshop 28.04.16 - Prototyping with Meteor JS @ DILo Denpasar
