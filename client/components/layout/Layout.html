@@ -1,0 +1,94 @@
+<template name="Layout">
+  <!-- Status bar overlay for fullscreen mode-->
+  <div class="statusbar-overlay"></div>
+  <!-- Views-->
+  <div class="views">
+    <!-- Put panels-overlay and left-panel with view inside of views-->
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-cover">
+      <!-- Left view-->
+      <div class="view view-left navbar-through">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left"></div>
+            <div class="center sliding">JEJAK</div>
+            <div class="right"></div>
+          </div>
+        </div>
+        <div class="pages">
+          <div data-page="index-left" class="page">
+            <div class="page-content">
+              <div class="content-block-title">{{#if currentUser}}@{{username}}{{else}}@guest{{/if}}</div>
+              <div class="list-block">
+                <ul>
+                  <li><a href="/" class="item-link close-panel">
+										<div class="item-content">
+											<div class="item-inner">
+												<div class="item-title">Home</div>
+											</div>
+										</div>
+									</a></li>
+                  <li><a href="/about" class="item-link close-panel">
+										<div class="item-content">
+											<div class="item-inner">
+												<div class="item-title">About</div>
+											</div>
+										</div>
+									</a></li>
+                </ul>
+              </div>
+              <div class="content-block-title">Control Main View</div>
+              <div class="list-block">
+                <ul>
+									{{#if currentUser}}
+										<li><a href="/post" data-view=".view-main" class="item-link close-panel">
+											<div class="item-content">
+												<div class="item-inner">
+													<div class="item-title">Post</div>
+												</div>
+											</div>
+										</a></li>
+										<li><a href="#" data-view=".view-main" class="logout item-link close-panel">
+											<div class="item-content">
+												<div class="item-inner">
+													<div class="item-title">Logout</div>
+												</div>
+											</div>
+										</a></li>
+									{{else}}
+										<li><a href="/signin" data-view=".view-main" class="item-link close-panel">
+											<div class="item-content">
+												<div class="item-inner">
+													<div class="item-title">Signin</div>
+												</div>
+											</div>
+										</a></li>
+										<li><a href="/signup" data-view=".view-main" class="item-link close-panel">
+											<div class="item-content">
+												<div class="item-inner">
+													<div class="item-title">Signup</div>
+												</div>
+											</div>
+										</a></li>
+									{{/if}}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Right view, it is main view-->
+    <div class="view view-main navbar-through">
+      {{#if Template.subscriptionsReady}}
+        {{>Template.dynamic template=content}}
+      {{else}}
+        <p>Loading ...</p>
+      {{/if}}
+    </div>
+  </div>
+
+  {{>popoverUser}}
+</template>

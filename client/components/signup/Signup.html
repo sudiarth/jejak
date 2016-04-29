@@ -1,0 +1,64 @@
+<template name="Signup">
+  <div class="pages">
+    <div data-page="Signup" class="page cached">
+      <div class="page-content">
+        <div class="content-blocked"><h3>Mohon mengisi form</h3></div>
+					<form action="post" id="signup">
+						<div class="list-block inputs-list">
+							<div class="row no-gutter">
+								<div class="col-100">
+									<div class="item-content">
+										<div class="item-inner">
+											<div class="item-input item-input-field">
+												<input type="text" id="email" placeholder="Email">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-100">
+									<div class="item-content">
+										<div class="item-inner">
+											<div class="item-input item-input-field">
+												<input type="text" id="username" placeholder="Username">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-100">
+									<div class="item-content">
+										<div class="item-inner">
+											<div class="item-input item-input-field">
+												<input type="password" id="password" placeholder="Password">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-100">
+									<div class="item-content">
+										<div class="item-inner">
+											<div class="item-input item-input-field">
+												<input type="password" id="confirm_password" placeholder="Confirm password">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							{{#if alert}}
+								<div class="content-block">
+									<div class="color-red">
+										<i class="ion-android-alert size-18 color-red"></i> {{alert}}
+									</div>
+								</div>
+							{{/if}}
+							<div class="content-block">
+								<a id="signupButton" href="#" class="button button-big button-fill color-blue" style="margin:20px 0">SIGNUP</a>
+								<div class="content-block">
+									<div class="list-block-label"><a href="/signin" class="color-blue">Sudah mendaftar?</a></div>
+								</div>
+							</div>
+						</div>
+					</form>
+      </div>
+    </div>
+  </div>
+</template>

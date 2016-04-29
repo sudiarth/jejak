@@ -1,0 +1,8 @@
+{
+  "name": "leaflet-awesome-markers",
+  "description": "Leaflet Awesome Markers Plugin for Meteor",
+  "homepage": "https://github.com/bevanhunt/meteor-leaflet-awesome-markers",
+  "author": "Bevan Hunt <bevan@bevanhunt.com> (http://www.bevanhunt.com)",
+  "version": "0.0.3",
+  "git": "https://github.com/bevanhunt/meteor-leaflet-awesome-markers.git"
+}

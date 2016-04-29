@@ -1,0 +1,118 @@
+.card-header-pic .card-header {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+.card-header {
+  min-height: 64px;
+}
+.facebook-card .card-header {
+  display: block;
+  padding: 10px;
+}
+.facebook-card .facebook-avatar {
+  float: left;
+}
+.facebook-card .facebook-merchant {
+  margin-left: 14px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.facebook-card .facebook-date {
+  margin-left: 54px;
+  font-size: 13px;
+  color: #8e8e93;
+}
+.facebook-card .facebook-name {
+  margin-left: 54px;
+  font-size: 14px;
+  color: #8e8e93;
+  font-weight: 700;
+}
+.facebook-card .card-footer {
+  background: #fafafa;
+}
+.facebook-card .card-footer a {
+  color: #81848b;
+  font-weight: 700;
+}
+.facebook-card .card-content img {
+  display: block;
+}
+.facebook-card .card-content-inner {
+  padding: 15px 10px;
+}
+
+.swiper-container.camera {
+    width: 100%;
+    height: 100px;
+    margin: 10px auto;
+    overflow-x:hidden;
+}
+.swiper-slide.camera {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    width: 100px;
+    border: 1px solid #eee;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide.camera:nth-child(2n) {
+    width: 40%;
+}
+.swiper-slide.camera:nth-child(3n) {
+    width: 20%;
+}
+
+.item-media img {
+  width: 48px;
+  height: 48px;
+  max-width: 48px;
+  border-radius: 50%;
+}
+
+.avatar img {
+  display: block;
+  margin: 0 auto 10px auto;
+  width: 110px;
+  height: 110px;
+  max-width: 110px;
+  border-radius: 50%;
+}
+
+.list-block li .item-inner.hr {
+    margin-bottom: 20px;
+}
+
+.list-block .item-inner:after {
+  height: 0px;
+}
+
+.list-block .item-inner.hr:after {
+  height: 1px;
+}
+
+.list-block ul:before {
+  height: 0px;
+}
+
+.list-block ul:after {
+  height: 0px;
+}
+
+.popover {
+  width: 240px;
+}
